@@ -1,0 +1,5 @@
+{
+    "AppSyncApiName": "todoGqlApi",
+    "DynamoDBBillingMode": "PAY_PER_REQUEST",
+    "DynamoDBEnableServerSideEncryption": false
+}
