@@ -1,13 +1,11 @@
 <template>
   <div id="app">
-    <h1>Todo App</h1>
-    <input type="text" v-model="data.name" placeholder="Todo name">
-    <input type="text" v-model="data.description" placeholder="Todo description">
-    <button v-on:click="createTodoItem">Create Todo</button>
-    <div v-for="item in todos" :key="item.id">
-      <h3>{{ item.name }}</h3>
-      <p>{{ item.description }}</p>
+    <div id="nav">
+      <router-link to="/">Home</router-link> |
+      <router-link to="/about-me">About Me</router-link>
+      <router-link to="/todo-demo">Todo Demo</router-link>
     </div>
+    <router-view />
   </div>
 </template>
 
